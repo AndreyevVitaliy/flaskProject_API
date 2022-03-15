@@ -4,7 +4,7 @@ from flask import request, jsonify
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
-Create some test data for our catalog in the form of a list of dictionaries.
+# Create some test data for our catalog in the form of a list of dictionaries.
 books = [
     {'id': 0,
      'title': 'A Fire Upon the Deep',
@@ -40,11 +40,5 @@ def api_first():
     for x in books:
        return x
 
-@app.route('/api/v1/resources/books/first', methods=['POST'])
-def api_first_post():
-
-
-
-    return jsonify(books)
 
 app.run()
