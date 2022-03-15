@@ -22,9 +22,7 @@ result = mycol.insert_many(mydict)
 print(type(result))
 print(result.inserted_ids)
 
-# for x in result:
-#     print(x)
-
+#надо понять как перебрать результаты добавления
 
 
 # nameCol = str(input('Введите название таблицы'))
