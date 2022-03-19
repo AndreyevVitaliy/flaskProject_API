@@ -16,4 +16,3 @@ service = build('drive', 'v3', credentials=credentials)
 results = service.files().list(pageSize=10,
                                fields="nextPageToken, files(id, name, mimeType)").execute()
 
-pp.pprint(results)
