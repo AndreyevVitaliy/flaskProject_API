@@ -54,5 +54,5 @@ dirName = '/Users/vitaliy/Desktop/Python'
 dirName = fd.askdirectory(title='Choose directory', initialdir=dirName)
 
 
-with open(os.path.join(dirName, file_name), 'wb') as wb:
+with open(os.path.join(dirName, file_object['name']), 'wb') as wb:
     wb.write(fh.getvalue())
